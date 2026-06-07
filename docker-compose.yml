@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    container_name: e14_forensic_jest_container
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=test
+    # Terminal interactiva estable para ejecutar comandos dentro del contenedor
+    tty: true
+    stdin_open: true
+    command: sh
