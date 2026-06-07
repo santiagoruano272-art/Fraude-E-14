@@ -1,7 +1,7 @@
 services:
   app:
     build: .
-    container_name: e14_forensic_jest_container
+    container_name: e14_antiFraude
     volumes:
       - .:/app
       - /app/node_modules
