@@ -1,11 +1,3 @@
-// ══════════════════════════════════════════════════════════════
-//  E-14 FORENSIC ENGINE — Suite de Pruebas Jest (Fase 3)
-//  Usa require (CommonJS) para compatibilidad con el contenedor
-//
-//  Ejecutar dentro del contenedor:
-//    docker compose exec app npm test
-// ══════════════════════════════════════════════════════════════
-
 const { checkTableFraud } = require('./e14Auditor');
 
 describe('--- ANALISIS FORENSE JEST: FORMULARIOS E-14 ---', () => {

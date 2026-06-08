@@ -1,19 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  FlatList,
-  TouchableOpacity,
-  SafeAreaView,
-  Alert,
-  ActivityIndicator,
-} from 'react-native';
+import { StyleSheet,Text,View,FlatList,TouchableOpacity,SafeAreaView,Alert,ActivityIndicator,} from 'react-native';
 import { createClient } from '@supabase/supabase-js';
 
-// ══════════════════════════════════════════════
-//   CONFIGURACIÓN DE SUPABASE — CONEXIÓN REAL
-// ══════════════════════════════════════════════
 const SUPABASE_URL = 'https://zbsoelgujjfpkvajdwnl.supabase.co';
 const SUPABASE_ANON_KEY =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpic29lbGd1ampmcGt2YWpkd25sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4MzYxMTAsImV4cCI6MjA5NjQxMjExMH0.dkfWxGAPkCSuglYGbVfb1nxJcqQVexZPMuh-GtOB-RU';

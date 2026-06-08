@@ -1,15 +1,10 @@
-// ══════════════════════════════════════════════════════════════
-//  E-14 FORENSIC ENGINE — Lógica de auditoría electoral
-//  Usa module.exports (CommonJS) para compatibilidad con Jest
-// ══════════════════════════════════════════════════════════════
-
 /**
  * Determina si un formulario E-14 tiene fraude electoral.
  * El fraude ocurre cuando la suma de todos los votos supera
  * la capacidad máxima registrada de votantes en esa mesa.
  *
- * @param {Object} form - Formulario E-14 con votos y datos de mesa
- * @returns {boolean} true si hay fraude, false si está verificado
+ * @param {Object} form 
+ * @returns {boolean} 
  */
 const checkTableFraud = (form) => {
   const totalVotes =
